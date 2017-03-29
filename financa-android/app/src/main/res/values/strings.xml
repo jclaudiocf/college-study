@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">FinançaApp</string>
+    <string name="title_activity_main_activity_menu">FinançaApp</string>
+
+    <string name="action_settings">Configurações</string>
+    <string name="action_sobre">Sobre</string>
+    <string name="action_sair">Sair</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="title_activity_usuario">Usuários</string>
+    <string name="title_activity_conta">Contas</string>
+    <string name="title_activity_centro_custo">Centro Custos</string>
+    <string name="title_activity_movimento">Movimentos</string>
+    <string name="title_activity_fixo">Fixos</string>
+    <string name="title_activity_sobre">Sobre o FinançaApp</string>
+    <string name="title_activity_embreve">Em Breve...</string>
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.app.financa.financaapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.MainActivityMenu"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name=".activity.SignupActivity"
+            android:theme="@style/AppTheme.Dark" />
+        <!--
+            -<activity
+            android:name=".activity.MainActivityMenu"
+            android:label="@string/title_activity_main_activity_menu"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        -->
+        <activity
+            android:name=".activity.UsuarioActivity"
+            android:label="@string/title_activity_usuario"
+            android:parentActivityName=".activity.MainActivityMenu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.app.financa.financaapp.activity.MainActivityMenu" />
+        </activity>
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".activity.ContaActivity"
+            android:label="@string/title_activity_conta"
+            android:parentActivityName=".activity.MainActivityMenu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.app.financa.financaapp.activity.MainActivityMenu" />
+        </activity>
+        <activity
+            android:name=".activity.CentroCustoActivity"
+            android:label="@string/title_activity_centro_custo"
+            android:parentActivityName=".activity.MainActivityMenu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.app.financa.financaapp.activity.MainActivityMenu" />
+        </activity>
+        <activity
+            android:name=".activity.MovimentoActivity"
+            android:label="@string/title_activity_movimento"
+            android:parentActivityName=".activity.MainActivityMenu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.app.financa.financaapp.activity.MainActivityMenu" />
+        </activity>
+        <activity
+            android:name=".activity.FixoActivity"
+            android:label="@string/title_activity_fixo"
+            android:parentActivityName=".activity.MainActivityMenu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.app.financa.financaapp.activity.MainActivityMenu" />
+        </activity>
+        <activity
+            android:name=".activity.SobreActivity"
+            android:label="@string/title_activity_sobre"
+            android:parentActivityName=".activity.MainActivityMenu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.app.financa.financaapp.activity.MainActivityMenu" />
+        </activity>
+        <activity
+            android:name=".activity.EmbreveActivity"
+            android:label="@string/title_activity_embreve"
+            android:parentActivityName=".activity.MainActivityMenu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.app.financa.financaapp.activity.MainActivityMenu" />
+        </activity>
+    </application>
+
+</manifest>

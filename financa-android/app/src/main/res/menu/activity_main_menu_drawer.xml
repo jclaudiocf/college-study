@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_usuario"
+            android:icon="@drawable/ic_menu_default"
+            android:title="Usuário" />
+        <item
+            android:id="@+id/nav_conta"
+            android:icon="@drawable/ic_menu_default"
+            android:title="Conta" />
+        <item
+            android:id="@+id/nav_centrocusto"
+            android:icon="@drawable/ic_menu_default"
+            android:title="Centro de Custo" />
+        <item
+            android:id="@+id/nav_fixo"
+            android:icon="@drawable/ic_menu_default"
+            android:title="Fixo" />
+        <item
+            android:id="@+id/nav_movimento"
+            android:icon="@drawable/ic_menu_default"
+            android:title="Movimento" />
+    </group>
+
+    <item android:title="Relatório">
+        <menu>
+            <item
+                android:id="@+id/nav_saldo"
+                android:icon="@drawable/ic_menu_default"
+                android:title="Saldo" />
+            <item
+                android:id="@+id/nav_extrato"
+                android:icon="@drawable/ic_menu_default"
+                android:title="Extrato" />
+        </menu>
+    </item>
+
+</menu>
