@@ -1,0 +1,491 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<title>DBdoc</title> 
+</head> 
+<style type="text/css"> 
+	table {width: 100%; border-collapse: collapse;} 
+	table, td, th {border: 1px solid black;} 
+</style> 
+<body> 
+<h1>mydb</h1> 
+<ol> 
+<li><a href="#USUARIOS">USUARIOS</a> (5 campos)</li><li><a href="#CONTAS">CONTAS</a> (11 campos)</li><li><a href="#CCUSTOS">CCUSTOS</a> (4 campos)</li><li><a href="#PARCELAS">PARCELAS</a> (14 campos)</li><li><a href="#MOVIMENTOS">MOVIMENTOS</a> (11 campos)</li><li><a href="#FIXOS">FIXOS</a> (7 campos)</li></ol> 
+<ol> 
+<li id="USUARIOS"> 
+<h2>USUARIOS</h2> 
+<p></p> 
+<table> 
+<tr> 
+<th>CAMPO</th> 
+<th>TIPO</th> 
+<th>NULO</th> 
+<th>EXTRA</th> 
+<th>COMENTARIOS</th> 
+</tr> 
+<tr> 
+   <td>IDUSUARIO</td> 
+   <td>INT</td> 
+    <td>NO</td> 
+    <td>AUTO_INCREMENT</td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>NOME</td> 
+   <td>VARCHAR(100)</td> 
+    <td>NO</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>LOGIN</td> 
+   <td>VARCHAR(30)</td> 
+    <td>NO</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>SENHA</td> 
+   <td>VARCHAR(10)</td> 
+    <td>NO</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>ST</td> 
+   <td>INT</td> 
+    <td>SI</td> 
+    <td> - </td> 
+    <td>VALORES
+1 = ATIVO
+2 = CANCELADO</td> 
+</tr> 
+</table> 
+</li> 
+<li id="CONTAS"> 
+<h2>CONTAS</h2> 
+<p></p> 
+<table> 
+<tr> 
+<th>CAMPO</th> 
+<th>TIPO</th> 
+<th>NULO</th> 
+<th>EXTRA</th> 
+<th>COMENTARIOS</th> 
+</tr> 
+<tr> 
+   <td>IDCONTA</td> 
+   <td>INT</td> 
+    <td>NO</td> 
+    <td>AUTO_INCREMENT</td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>IDUSUARIO</td> 
+   <td>INT</td> 
+    <td>NO</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>DESCRICAO</td> 
+   <td>VARCHAR(100)</td> 
+    <td>SI</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>TIPO_CONTA</td> 
+   <td>INT</td> 
+    <td>SI</td> 
+    <td> - </td> 
+    <td>VALORES
+1 = BANCO
+2 = CAIXA
+3 = APLICAÇÃO</td> 
+</tr> 
+<tr> 
+   <td>AGENCIA</td> 
+   <td>VARCHAR(100)</td> 
+    <td>SI</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>DIGITO_AGENCIA</td> 
+   <td>VARCHAR(5)</td> 
+    <td>SI</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>CONTA</td> 
+   <td>VARCHAR(100)</td> 
+    <td>SI</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>DIGITO_CONTA</td> 
+   <td>VARCHAR(5)</td> 
+    <td>SI</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>ENDERECO_AGENCIA</td> 
+   <td>VARCHAR(100)</td> 
+    <td>SI</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>SALDO</td> 
+   <td>DECIMAL(10,0)</td> 
+    <td>SI</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>ST</td> 
+   <td>INT</td> 
+    <td>SI</td> 
+    <td> - </td> 
+    <td>VALORES
+1 = ATIVO
+2 = CANCELADO</td> 
+</tr> 
+</table> 
+</li> 
+<li id="CCUSTOS"> 
+<h2>CCUSTOS</h2> 
+<p></p> 
+<table> 
+<tr> 
+<th>CAMPO</th> 
+<th>TIPO</th> 
+<th>NULO</th> 
+<th>EXTRA</th> 
+<th>COMENTARIOS</th> 
+</tr> 
+<tr> 
+   <td>IDCCUSTO</td> 
+   <td>INT</td> 
+    <td>NO</td> 
+    <td>AUTO_INCREMENT</td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>IDUSUARIO</td> 
+   <td>INT</td> 
+    <td>NO</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>DESCRICAO</td> 
+   <td>VARCHAR(100)</td> 
+    <td>SI</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>ST</td> 
+   <td>INT</td> 
+    <td>SI</td> 
+    <td> - </td> 
+    <td>VALORES
+1 = ATIVO
+2 = CANCELADO</td> 
+</tr> 
+</table> 
+</li> 
+<li id="PARCELAS"> 
+<h2>PARCELAS</h2> 
+<p></p> 
+<table> 
+<tr> 
+<th>CAMPO</th> 
+<th>TIPO</th> 
+<th>NULO</th> 
+<th>EXTRA</th> 
+<th>COMENTARIOS</th> 
+</tr> 
+<tr> 
+   <td>IDPARCELA</td> 
+   <td>INT</td> 
+    <td>NO</td> 
+    <td>AUTO_INCREMENT</td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>IDMOVIMENTO</td> 
+   <td>INT</td> 
+    <td>NO</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>IDMOVIMENTO_QUITACAO</td> 
+   <td>INT</td> 
+    <td>SI</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>IDCCUSTO</td> 
+   <td>INT</td> 
+    <td>NO</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>IDCONTA</td> 
+   <td>INT</td> 
+    <td>NO</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>TIPO_PARCELA</td> 
+   <td>INT</td> 
+    <td>SI</td> 
+    <td> - </td> 
+    <td>VALORES
+1 = QUITADO
+3 = CREDITO_A_PRAZO
+4 = DEBITO_A_PRAZO</td> 
+</tr> 
+<tr> 
+   <td>DESCRICAO</td> 
+   <td>VARCHAR(100)</td> 
+    <td>SI</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>DATA_LANCAMENTO</td> 
+   <td>TIMESTAMP</td> 
+    <td>SI</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>DATA_VENCIMENTO</td> 
+   <td>TIMESTAMP</td> 
+    <td>SI</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>DATA_QUITACAO</td> 
+   <td>TIMESTAMP</td> 
+    <td>SI</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>VALOR</td> 
+   <td>DECIMAL(10,0)</td> 
+    <td>SI</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>NUMERO_PARCELA</td> 
+   <td>INT</td> 
+    <td>SI</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>TOTAL_PARCELA</td> 
+   <td>INT</td> 
+    <td>SI</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>ST</td> 
+   <td>INT</td> 
+    <td>SI</td> 
+    <td> - </td> 
+    <td>VALORES
+1 = ATIVO
+2 = CANCELADO</td> 
+</tr> 
+</table> 
+</li> 
+<li id="MOVIMENTOS"> 
+<h2>MOVIMENTOS</h2> 
+<p></p> 
+<table> 
+<tr> 
+<th>CAMPO</th> 
+<th>TIPO</th> 
+<th>NULO</th> 
+<th>EXTRA</th> 
+<th>COMENTARIOS</th> 
+</tr> 
+<tr> 
+   <td>IDMOVIMENTO</td> 
+   <td>INT</td> 
+    <td>NO</td> 
+    <td>AUTO_INCREMENT</td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>IDUSUARIO</td> 
+   <td>INT</td> 
+    <td>NO</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>IDCCUSTO</td> 
+   <td>INT</td> 
+    <td>NO</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>IDCONTA</td> 
+   <td>INT</td> 
+    <td>NO</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>IDFIXO</td> 
+   <td>INT</td> 
+    <td>SI</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>TIPO_MOVIMENTO</td> 
+   <td>INT</td> 
+    <td>NO</td> 
+    <td> - </td> 
+    <td>VALORES
+1 = CREDITO_A_VISTA
+2 =  DEBITO_A_VISTA
+3 = CREDITO_A_PRAZO
+4 = DEBITO_A_PRAZO
+5 = QUITACAO_DE_CREDITO
+6 = QUITACAO_DE_DEBITO</td> 
+</tr> 
+<tr> 
+   <td>DESCRICAO</td> 
+   <td>VARCHAR(100)</td> 
+    <td>SI</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>DATA_LANCAMENTO</td> 
+   <td>TIMESTAMP</td> 
+    <td>SI</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>VALOR</td> 
+   <td>DECIMAL(10,0)</td> 
+    <td>SI</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>PARCELADO</td> 
+   <td>VARCHAR(1)</td> 
+    <td>SI</td> 
+    <td> - </td> 
+    <td>VALORES
+1 = SIM
+2 = NAO</td> 
+</tr> 
+<tr> 
+   <td>ST</td> 
+   <td>INT</td> 
+    <td>SI</td> 
+    <td> - </td> 
+    <td>VALORES
+1 = ATIVO
+2 = CANCELADO</td> 
+</tr> 
+</table> 
+</li> 
+<li id="FIXOS"> 
+<h2>FIXOS</h2> 
+<p></p> 
+<table> 
+<tr> 
+<th>CAMPO</th> 
+<th>TIPO</th> 
+<th>NULO</th> 
+<th>EXTRA</th> 
+<th>COMENTARIOS</th> 
+</tr> 
+<tr> 
+   <td>IDFIXO</td> 
+   <td>INT</td> 
+    <td>NO</td> 
+    <td>AUTO_INCREMENT</td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>IDUSUARIO</td> 
+   <td>INT</td> 
+    <td>NO</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>TIPO_FIXO</td> 
+   <td>INT</td> 
+    <td>SI</td> 
+    <td> - </td> 
+    <td>VALORES
+1 = PROVENTO
+2 = DESCONTO</td> 
+</tr> 
+<tr> 
+   <td>DESCRICAO</td> 
+   <td>VARCHAR(100)</td> 
+    <td>SI</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>VALOR</td> 
+   <td>DECIMAL(10,0)</td> 
+    <td>SI</td> 
+    <td> - </td> 
+    <td></td> 
+</tr> 
+<tr> 
+   <td>PERIODICIDADE</td> 
+   <td>INT</td> 
+    <td>SI</td> 
+    <td> - </td> 
+    <td>VALORES
+1 = SEMANAL
+2 = MENSAL
+3 = ANUAL</td> 
+</tr> 
+<tr> 
+   <td>ST</td> 
+   <td>INT</td> 
+    <td>SI</td> 
+    <td> - </td> 
+    <td>VALORES
+1 = ATIVO
+2 = CANCELADO</td> 
+</tr> 
+</table> 
+</li> 
+</ol> 
+</body> 
+</html>

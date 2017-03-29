@@ -1,0 +1,17 @@
+Aplicativo de UML
+
+ObjectAid UML Explorer
+URL: http://www.objectaid.com/class-diagram
+URL Eclipse: http://www.objectaid.net/update
+
+UML Designer
+URL: http://www.umldesigner.org/
+URL Eclipse: http://www.obeo.fr/download/release/uml/4.0.1/repository/
+
+Repositório
+https://xp-dev.com/svn/srcs/trunk/Financa
+Usuário: jclaudiocf
+Senha: **********
+
+Subversive Site 
+http://download.eclipse.org/technology/subversive/2.0/update-site/

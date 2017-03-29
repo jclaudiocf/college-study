@@ -1,0 +1,23 @@
+MVC - Model, View, Controller
+
+------------------------
+- View
+------------------------
+Entrada de informações
+-console
+-windows builder
+
+------------------------
+- Controller
+------------------------
+Classes que utilizam as classes de modelos ligando o View e Model, regra de negócio
+-classes auxiliares
+-conexão
+
+------------------------
+- Model
+------------------------
+Classes que representam as entidades do banco e suas classes DAO
+
+-classes de entidade
+-classes DAO (Data Access Object)
