@@ -1,0 +1,11 @@
+table caption {
+	background-color: #007FFF;
+	color: white;
+	font-size: 25px;
+}
+
+th {
+	background-color: #007FFF;
+	color: white;
+	font-size: 12px;
+}
