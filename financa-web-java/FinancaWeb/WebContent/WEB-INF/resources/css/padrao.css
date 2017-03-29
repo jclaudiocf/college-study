@@ -1,0 +1,65 @@
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #6a6c6c;
+}
+
+a:link, a:hover, a:visited {
+	text-decoration: none;
+	color: #6a6c6c;
+}
+
+.listas:hover {
+	background-color: #d3d7cf;
+}
+
+#header {
+    background-color: #47a3da;
+    color: white;
+    clear: both;
+    text-align: center;
+    padding: 5px;
+    font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+}
+
+#nav {
+    line-height: 30px;
+    background-color: #eeeeee;
+    height: 300px;
+    width: 100px;
+    float: left;
+    padding: 5px;	      
+}
+
+#section {
+    width: 1100px;
+    float: left;
+    padding: 10px;
+}
+
+#footer {
+   background-color: #47a3da;
+   color: white;
+   clear: both;
+   text-align: center;
+   padding: 5px;	 	 
+}
+
+#logout a {
+	color: #999;
+    font-weight: 700;
+    padding: 1em 2em;
+}
+
+#boxlogin {
+	background-color: #47a3da;
+	color: white;
+	position: absolute;
+    width: 200px;
+    height: 126px;
+    left: 50%;
+    top:50%;
+    margin-left: -100px;
+    margin-top: -63px;
+}
